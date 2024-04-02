@@ -9,9 +9,10 @@
 }
 
 :root {
-    --clr-black: #47f0b8;
+    --clr-black: #23eb9b86;
     --clr-white: #f2ebd9;
     --clr-accent: #0f0705;
+    border-radius: 2px;
 }
 
 .container {
@@ -34,9 +35,14 @@ img {
 
 .imgbanner {
     max-width: 100%;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    border: 3px solid #2aada7;
+    border-radius: 2px;
+    padding: 0rem;
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,6 +59,17 @@ h1, h2, h3, h4, h5, h6 {
     padding-block: 2rem;
 }
 
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#busqueda {
+    padding: .15rem;
+    border-radius: 10px;
+    background-color: rgb(243, 246, 242);
+}
+
 .titulo {
     margin-bottom: 1rem;
 }
@@ -65,13 +82,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pintura {
-    background-color: var(--clr-black);
+    background-color: #2ccb96;
     padding: .5rem;
     border-radius: 1rem;
     color: var(--clr-white);
     display: flex;
     flex-direction: column;
     gap: .25rem;
+    text-shadow: 2px 2px 2px #0f0705;
 }
 
 .pintura-img {
@@ -111,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--clr-black);
     padding: .5rem 1rem;
     border-radius: 1rem;
-    color: var(--clr-white);
+    color: var(--clr-accent);
 }
 
 .venta-pintura-btn {

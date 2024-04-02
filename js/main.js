@@ -1,5 +1,4 @@
 const venta = JSON.parse(localStorage.getItem("venta")) || [];
-console.log(venta);
 
 const pinturas = [
     {
